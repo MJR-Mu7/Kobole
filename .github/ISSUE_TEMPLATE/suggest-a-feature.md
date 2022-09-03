@@ -1,6 +1,6 @@
 ---
 name: Suggest a Feature
-about: Suggest a new feature or an improvement to an existing feature for this template.
+about: Suggest a new feature or an improvement to an existing feature for Kobole.
 title: ""
 labels: enhancement
 assignees: ""

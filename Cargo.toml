@@ -1,8 +1,36 @@
 [workspace]
 members = [
-    'node',
-    'pallets/template',
-    'runtime',
+    'latte/node',
+	'latte/primitives',
+	'latte/runtime',
+	'pallets/domains',
+    'pallets/parachain-utils',
+    'pallets/nft',
+    'pallets/peak-nft',
+    "pallets/base-fee",
+	"pallets/dynamic-fee",
+	"pallets/ethereum",
+	"pallets/evm",
+	"pallets/evm/precompile/sha3fips",
+	"pallets/evm/precompile/simple",
+	"pallets/evm/precompile/modexp",
+	"pallets/evm/precompile/ed25519",
+	"pallets/evm/precompile/bn128",
+	"pallets/evm/precompile/blake2",
+	"pallets/evm/precompile/dispatch",
+	"pallets/evm/precompile/curve25519",
+    "primitives/consensus",
+	"primitives/dynamic-fee",
+	"primitives/evm",
+	"primitives/rpc",
+	"primitives/self-contained",
+	"pallets/tokens",
+	"pallets/utilities",
+	"pallets/currencies",
+	"pallets/traits",
 ]
 [profile.release]
+opt-level = 3
+lto = false
 panic = 'unwind'
+codegen-units = 16

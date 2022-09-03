@@ -1,6 +1,6 @@
 ---
 name: Report a Bug
-about: Report a problem with this template.
+about: Report a problem with Kobole.
 title: ""
 labels: bug
 assignees: ""
