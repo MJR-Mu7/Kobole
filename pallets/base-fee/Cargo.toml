@@ -1,0 +1,43 @@
+[package]
+name = "pallet-base-fee"
+version = "1.0.0"
+authors = ["Parity Technologies <admin@parity.io>"]
+edition = "2021"
+license = "Apache-2.0"
+homepage = "https://substrate.dev"
+repository = "https://github.com/paritytech/frontier/"
+description = "EIP-1559 fee utils"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[dependencies]
+serde = { version = "1.0.101", optional = true }
+
+codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false }
+scale-info = { version = "2.0.0", default-features = false, features = ["derive"] }
+sp-core = { version = "6.0.0", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.18"  , default-features = false }
+sp-runtime = { version = "6.0.0", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.18"  , default-features = false }
+
+frame-support = { version = "4.0.0-dev", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.18"  , default-features = false }
+frame-system = { version = "4.0.0-dev", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.18"  , default-features = false }
+
+fp-evm = { version = "3.0.0-dev", path = "../../primitives/evm", default-features = false }
+
+[dev-dependencies]
+sp-io = { version = "6.0.0", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.18"  , default-features = false }
+
+[features]
+default = ["std"]
+std = [
+	"serde",
+
+	"codec/std",
+	"scale-info/std",
+	"sp-core/std",
+	"sp-runtime/std",
+	"frame-support/std",
+	"frame-system/std",
+
+	"fp-evm/std",
+]

@@ -1,0 +1,8 @@
+doc
+target
+.idea/
+Dockerfile
+README
+.dockerignore
+.local
+.cargo
