@@ -10,7 +10,7 @@ Follow the steps below to get started with Kobole.
 
     docker build -t kobole .
 
-    docker run -it -u 0 --restart=always --net=host kobole:latest --chain live --base-path /kobole/validator1 --validator --name Cpt_Stee --ws-port 9946 --port 30336 --rpc-port 9936 --rpc-cors all --unsafe-rpc-external
+    docker run -it -u 0 --restart=always --net=host kobole:latest --chain live --base-path /kobole/validator1 --validator --name <Validator-Name> --ws-port 9946 --port 30336 --rpc-port 9936 --rpc-cors all --unsafe-rpc-external
 
 
 ## Run Kobole Container<ROOT>.
