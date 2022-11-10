@@ -9,6 +9,8 @@ Follow the steps below to get started with Kobole.
 
 
     docker pull mjrmu7/kobole:1.0
+    
+    docker run -it -u 0 --restart=always --net=host mjrmu7/kobole:1.0 --chain live --base-path /kobole/validator1 --validator --name <Validator-Name> --ws-port 9946 --port 30336 --rpc-port 9936 --rpc-cors all --safe-ws-external --safe-rpc-external --prometheus-external
 
 
 ## OR build Kobole below
