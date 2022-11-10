@@ -5,6 +5,13 @@ Kobole NPoS,Nominated Proof of Stake, is an NFT enabled DAO enabling WASM Smart 
 
 Follow the steps below to get started with Kobole.
 
+## Docker Pull from Docker hub
+
+
+    docker pull mjrmu7/kobole:1.0
+
+
+## OR build Kobole below
 ## Docker build Kobole.
 
 
