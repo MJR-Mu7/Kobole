@@ -51,8 +51,7 @@ RUN cargo build --release
 
 # Final stage. Copy the kobole executable and subkey.
 FROM final
-LABEL maintainer="❤️ MJR.Mu7 : @mjr_mu7" \
-	 description="2nd build stage for Kobole. Here we copy the binary."
+LABEL description="2nd build stage for Kobole. Here we copy the binary."
 
 # curl is required for uploading to keystore
 # note: `subkey insert` is a potential alternarve to curl
